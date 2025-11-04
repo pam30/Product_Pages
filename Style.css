@@ -1,0 +1,163 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ties New Roman" , serif;
+}
+
+/* Header */
+header {
+  background-color: #1a237e;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 10px;
+ font-size: 28px;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Body Layout */
+.body-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 30px;
+  background: linear-gradient(to bottom, #e3f2fd, #bbdefb);
+}
+
+/* Product grid */ 
+.product {
+  width: 85%;
+}
+
+/* Row 1 at Row 2 - apat na magkakatabi bawat row */
+.row1,  .row2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns per row */
+  gap: 20px; /*pagitan ng bawat card */
+  justify-items: center;
+  margin-bottom: 40px;
+}
+
+/* Style ng bawat product card */
+.card {
+  width: 220px;
+  background-color: white;
+  border: 2px solid #90caf9;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0,1);
+  padding: 10px;
+}
+
+/* Para pantay laki ng pictures */
+.card img {
+  width: 100%;
+  height: 160px;    /* pare-parehong laki */
+  object-fit: cover;  /*hindi distorted */
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Text design */
+.card h3 {
+  font-size: 18px;
+  color: #0d47;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #333;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Para maganda button*/
+.card button {
+  background-color: #197;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.card button:hover  {
+  background-color:  #0d47;
+}
+
+/* Hover effect sa card */
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+}
+
+/* Cart / Sidebar */
+aside {
+  width: 20%;
+  background-color: #f1f8e9;
+  border-radius: 10px;
+  border: 2px solid #aed581;
+  padding: 15px;
+  text-align: left;
+  box-shadow: 0 2px rgba(0,0,0,0,1);
+}
+
+aside h3 {
+  text-align: center;
+  color: #33691e;
+  margin-bottom; 10px;
+}
+
+aside ul {
+  list-style-type: none;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+aside li {
+  margin-bottom: 6px;
+ color: #333;
+}
+
+aside p {
+  font-weight: bold;
+  text-align: center;
+}
+
+aside button {
+  width: 100%;
+  padding: 8px;
+  background-color: #43a047;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+aside button:hover {
+  background-color: #2e7d32;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #1a237e;
+  color: white;
+  margin-top: 20px;
+}
